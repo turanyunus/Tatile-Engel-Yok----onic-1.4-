@@ -1,0 +1,20 @@
+<ion-view view-title="Forum / Konu Listesi">
+  <ion-content>
+    <ion-list>
+        <div class="card" ng-repeat="playlist in playlists track by $index" style="border-left:1px solid #FFC900;">
+          <a  style="text-decoration: none; ">
+			  <div class="item item-divider">
+			    {{playlist.konu_baslik}}
+			    <span class="item-note ion-android-favorite" style="margin-left:15px;"> 
+			    	{{playlist.konu_grt}}</span>
+			   	<span class="item-note ion-chatbubble">{{playlist.konu_yorum}}</span>
+			  </div>
+			  <div class="item item-text-wrap">
+			   {{playlist.konu_aciklama}}
+			  </div>
+		  </a>
+		  <!-- href="#/app/playlists/{{playlist.id}}" -->
+		</div>
+    </ion-list>
+  </ion-content>
+</ion-view>

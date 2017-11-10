@@ -1,0 +1,30 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Kullanıcı Girişi</h1>
+    <div class="buttons">
+      <button class="button button-clear" style="color:#ffc900;" ng-click="closeModal('login')">Kapat</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <p class="hBes">Giriş Yaparak yeni güncellemelerimizden ve Fırsatlarımızdan daha hızlı haberdar olabilirsiniz. Eger kayıt değilseniz giriş yapamazsınız. Kayıt ol butonundan kayıt olup giriş yapabilirsiniz</p>
+    <form class="formGiris">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Kullanıcı Adı</span>
+          <input type="text" ng-model="loginData.username" style="border-bottom:1px solid #CCC">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Şifre</span>
+          <input type="password" ng-model="loginData.password" style="border-bottom:1px solid #CCC">
+        </label>
+        <a style="text-align:right;" href="#">Parolayı Unuttum</a>
+        <label class="item">
+          <button class="button button-block button-energized" ng-click="doLogin()">Giriş Yap</button>
+        </label>
+      </div>
+    </form>
+    <label class="item" ng-click="closeModal('login2kayit')">
+      <a class="button button-block button-energized" style="top:-30px;">Kayıt Ol</a>
+    </label>
+  </ion-content>
+</ion-modal-view>

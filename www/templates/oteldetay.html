@@ -1,0 +1,15 @@
+<ion-view view-title="Detaylar">
+  <ion-content>
+      <div class="item item-body">
+	    <img class="full-image" src="{{detail.otel_resim}}">
+	    <h2 style="border-bottom:1px solid #C20099;font-size: 19px;">{{ detail.oteladi }}</h2>
+	    <h3>Kontenjan :     <i class="logo ion-ios-people"></i>{{detail.otel_kontejyan}}</h3>
+	    <p> <strong>Konum : {{ detail.otel_konum_kisa }}</strong></p>
+	    	  <a href="tel:{{detail.otel_tel}}" class="button icon-left ion-ios-telephone button-positive" style="width:60%">{{detail.otel_tel}}</a>
+
+	    <p>{{ detail.otel_aciklama }}</p>
+	   
+	    <h2><strong>Teşekkürler...</strong></h2>
+	  </div>
+  </ion-content>
+</ion-view>

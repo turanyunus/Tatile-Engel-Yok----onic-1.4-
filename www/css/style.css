@@ -1,0 +1,41 @@
+/* Empty. Add your own CSS if you like */
+.hBes{
+	margin-left: 17px;
+	margin-top: 30px;
+	color:#C20099;
+}
+.hBes2{
+	margin-left: 17px;
+	margin-top: 30px;
+	color:#ffc900;
+	text-align: center;
+}
+.aramaForm{
+	margin: 15px;	
+	padding: 10px;
+	border: 1px solid #CCC;
+	border-color:#C20099;
+	border-radius: 3px;
+}
+.aramabutton{
+	margin-top: -10px;	
+	border-radius: 3px;
+}
+.logo{
+	margin-right: 10px;
+}
+.itembor{
+	  border-top: 1px solid #CCC;
+}
+
+.menuBar{
+	background-color:#CCC;
+	color: #FFF;
+}
+
+.formGiris{
+	border-radius: 3px;
+	padding:20px;
+	margin: 15px;
+	margin-top:30px;    border: 1px solid #C20099;
+}

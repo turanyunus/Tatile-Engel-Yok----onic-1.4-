@@ -1,0 +1,30 @@
+<ion-view view-title="Kayıt Olunuz">
+  <ion-header-bar >
+    <h1 class="title">Kullanıcı Kayıt</h1>
+    <div class="buttons">
+      <button class="button button-clear"  style="color:#ffc900;" ng-click="closeModal('kayit')">Kapat</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+  <p class="hBes">Güncellemelerimizden ve fırsatları daha hızlı görmek için kayıt olabilirsiniz ...</p>
+    <form class="formGiris">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Kullanıcı Adı Giriniz" style="border-bottom:1px solid #CCC" ng-model="kayitData.kadi">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Şifre Giriniz" style="border-bottom:1px solid #CCC" ng-model="kayitData.sifre">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Şifre Tekrar Giriniz" style="border-bottom:1px solid #CCC" ng-model="kayitData.sifreT">
+        </label>
+        <label class="item item-input">
+          <input type="email" placeholder="Emailinizi Giriniz" style="border-bottom:1px solid #CCC" ng-model="kayitData.email">
+        </label>
+        <label class="item">
+          <button class="button button-block button-energized" ng-click="doRegister()">Kayit Ol</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

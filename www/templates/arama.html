@@ -1,0 +1,27 @@
+<ion-view view-title="Tatile Engel Yok">
+        <ion-content>
+          <p class="hBes">ARAMA : Tatil Köyü, Otel veya Kontenjan  ..</p>
+
+            <div class="list aramaForm">
+			  <label class=" ion-search item item-input">
+			    <input type="text"  style="margin-left:5px;" placeholder="Otel, Şehir veya Kelime" ng-model="search">
+			  </label>
+			</div>
+
+
+
+				<!-- ÖNE ÇIKAN OTELLER-->
+			<p class="hBes2"> Öne Çıkan Oteller</p>
+			<p style="text-align:center;color:#FFC90D" class="ion-arrow-down-a"></p>
+
+			<div class="list" ng-repeat="otels in otel | filter:search">
+			    <a class="item item-thumbnail-left" href="#/app/tab/{{otels.id}}">
+			      <img src="{{otels.otel_resim}}">
+			      <h2>{{otels.oteladi}}</h2>
+			      <p>{{otels.otel_konum_kisa}}</p>
+			      <p>{{otels.otel_aciklama}}</p>
+			      <h3> Kontenjan :    <i class="logo ion-ios-people"></i>{{otels.otel_kontejyan}}</h3>
+			    </a>
+			</div>
+        </ion-content>
+</ion-view>

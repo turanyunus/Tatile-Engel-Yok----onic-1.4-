@@ -1,0 +1,91 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-energized">
+      <ion-nav-back-button>Geri
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-android-notifications" menu-toggle="right">
+        </button>
+
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-energized">
+      <h1 class="title">Menü</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list class="menuBar">
+        <ion-item class="itembor" menu-close href="#/app/tabs/">
+          <i class="logo ion-home"></i>
+          Anasayfa
+        </ion-item>
+        <ion-item class="itembor" menu-close ng-click="openModal('login')" ng-if="user==null">
+          <i class="logo ion-ios-people"></i>
+          Giriş Yap
+        </ion-item>
+        <ion-item class="itembor" menu-close href="#/app/kayit" ng-if="user==null">
+          <i class="logo ion-ios-people"></i>
+          Kayıt Ol
+        </ion-item>
+        <ion-item class="itembor" menu-close ng-click="logout()" ng-if="user!=null">
+          <i class="logo ion-log-out"></i>
+          Çıkış Yap
+        </ion-item>
+        <ion-item class="itembor" menu-close href="#/app/hakkimizda">
+          <i class="logo ion-information"></i>
+          Hakkımızda
+        </ion-item>
+        <ion-item class="itembor" menu-close href="#/app/iletisim">
+          <i class="logo ion-ios-telephone"></i>
+          İletişim
+        </ion-item>
+        <ion-item class="itembor" menu-close href="#/app/playlists">
+          <i class="logo ion-compose"></i>
+          Forum
+        </ion-item>
+        <ion-item class="itembor" menu-close href="#/app/forumkonuekle" ng-if="user!=null">
+          <i class="logo ion-edit"></i>
+          Forum Konu Ekle
+        </ion-item>
+      </ion-list>
+
+      <h4 class="" style="color:#FFC90D;bottom:0;bottom:40;left:20px;
+position: fixed;">Tatile Engel yok</h4>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu side="right">
+    <ion-header-bar class="bar-energized">
+      <h1 class="title">Bildirimler</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item class="itembor" menu-close href="#">
+          <h2>Bildirim 1</h2>
+          <p>Uygulamamız Güncellendi</p>
+        </ion-item>
+        <ion-item class="itembor" menu-close>
+          <h2>Bildirim 2</h2>
+          <p>Sorunlarınızı İletebilirsiniz</p>
+        </ion-item>
+        <ion-item class="itembor" menu-close href="#">
+          <h2>Bildirim 3</h2>
+          <p>Neler Olmasını İsterdiniz</p>
+        </ion-item>
+        <ion-item class="itembor" menu-close href="#">
+          <h2>Bildirim 4</h2>
+          <p>Nolsun İstiyon ?</p>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

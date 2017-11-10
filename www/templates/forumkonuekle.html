@@ -1,0 +1,18 @@
+<ion-view view-title="Konu ekle">
+
+  <ion-content>
+    	<p class="hBes">Başkalarınında bilmek istediği konuları, olayları, şikayetlerinizi ve tavsiye ettiğiniz olaylarınıda buraya yazarak, diğer arkadaşlarınıza yardımcı olabilirsiniz.</p>
+	<div class="list aramaForm">
+	  <label style="margin-bottom:10px;border-bottom:1px solid #C20099" class="item item-input">
+	    <input type="text"  style="margin-left:10px;" placeholder="Konu Başlık Giriniz"  
+	    ng-model="konuKayitData.konuBaslik">
+	  </label>
+	  <label class="item item-input" >
+	    <textarea  style="margin-bottom:10px;border-bottom:1px solid #C20099; height:100px;" placeholder="Konu ile ilgili açıklama giriniz"  ng-model="konuKayitData.konuAciklama"></textarea>
+	  </label>
+	  <button class="button button-full button-energized aramabutton" ng-click="konuKayit()">
+		  Konu Ekle
+	  </button>
+	</div>
+  </ion-content>
+</ion-view>
